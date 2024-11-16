@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:papercups_flutter/utils/constant.dart';
 import 'package:papercups_flutter/utils/fileInteraction/native_file_picker.dart';
 import 'package:papercups_flutter/utils/fileInteraction/web_file_picker.dart';
 import '../../models/models.dart';
@@ -106,7 +107,7 @@ class _SendMessageState extends State<SendMessage> {
         textStyle: widget.props.style.chatUploadingAlertTextStyle ??
             Theme.of(context).textTheme.bodyMedium,
         backgroundColor: widget.props.style.chatUploadingAlertBackgroundColor ??
-            BottomAppBarTheme.of(context).color!,
+            BottomAppBarTheme.of(context).color ?? defaultBackgroundColor,
         gravity: Alert.bottom,
         duration: Alert.lengthLong,
       );

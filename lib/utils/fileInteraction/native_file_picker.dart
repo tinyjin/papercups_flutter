@@ -4,6 +4,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:papercups_flutter/models/models.dart';
+import 'package:papercups_flutter/utils/constant.dart';
 import 'package:papercups_flutter/utils/fileInteraction/upload_file.dart';
 import 'package:papercups_flutter/widgets/widgets.dart';
 
@@ -25,7 +26,7 @@ void nativeFilePicker({
         textStyle: widget.props.style.chatUploadingAlertTextStyle ??
             Theme.of(context).textTheme.bodyMedium,
         backgroundColor: widget.props.style.chatUploadingAlertBackgroundColor ??
-            BottomAppBarTheme.of(context).color!,
+            BottomAppBarTheme.of(context).color ?? defaultBackgroundColor,
         gravity: Alert.bottom,
         duration: Alert.lengthLong,
       );
@@ -40,7 +41,8 @@ void nativeFilePicker({
                 Theme.of(context).textTheme.bodyMedium,
             backgroundColor:
                 widget.props.style.chatUploadingAlertBackgroundColor ??
-                    BottomAppBarTheme.of(context).color!,
+                    BottomAppBarTheme.of(context).color ??
+                    defaultBackgroundColor,
             gravity: Alert.bottom,
             duration: Alert.lengthLong,
           );
@@ -56,7 +58,7 @@ void nativeFilePicker({
       textStyle: widget.props.style.chatUploadErrorAlertTextStyle ??
           Theme.of(context).textTheme.bodyMedium,
       backgroundColor: widget.props.style.chatUploadErrorAlertBackgroundColor ??
-          BottomAppBarTheme.of(context).color!,
+          BottomAppBarTheme.of(context).color ?? defaultBackgroundColor,
       gravity: Alert.bottom,
       duration: Alert.lengthLong,
     );
@@ -68,7 +70,7 @@ void nativeFilePicker({
       textStyle: widget.props.style.chatUploadErrorAlertTextStyle ??
           Theme.of(context).textTheme.bodyMedium,
       backgroundColor: widget.props.style.chatUploadErrorAlertBackgroundColor ??
-          BottomAppBarTheme.of(context).color!,
+          BottomAppBarTheme.of(context).color ?? defaultBackgroundColor,
       gravity: Alert.bottom,
       duration: Alert.lengthLong,
     );

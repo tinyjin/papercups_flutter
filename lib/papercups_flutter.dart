@@ -3,6 +3,7 @@ library papercups_flutter;
 // Imports.
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:papercups_flutter/utils/constant.dart';
 import 'package:phoenix_socket/phoenix_socket.dart';
 import 'models/models.dart';
 import 'utils/utils.dart';
@@ -107,7 +108,7 @@ class _PapercupsWidgetState extends State<PapercupsWidget> {
                 Theme.of(context).textTheme.bodyMedium,
             backgroundColor:
                 widget.props.style.chatNoConnectionAlertBackgroundColor ??
-                    BottomAppBarTheme.of(context).color!,
+                    BottomAppBarTheme.of(context).color ?? defaultBackgroundColor,
             gravity: Alert.bottom,
             duration: Alert.lengthLong,
           );

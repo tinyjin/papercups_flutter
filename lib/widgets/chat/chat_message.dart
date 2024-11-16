@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:papercups_flutter/utils/constant.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import '../../models/models.dart';
 
@@ -134,7 +135,7 @@ class _ChatMessageState extends State<ChatMessage> {
               Theme.of(context).textTheme.bodyMedium,
           backgroundColor:
               widget.props.style.chatCopiedTextAlertBackgroundColor ??
-                  BottomAppBarTheme.of(context).color!,
+                  BottomAppBarTheme.of(context).color ?? defaultBackgroundColor,
           gravity: Alert.bottom,
           duration: Alert.lengthLong,
         );
