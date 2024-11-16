@@ -1,3 +1,13 @@
+## [3.1.3] - 16/11/2024
+
+- Fix file picker
+- There was an issue with null pointer exception when the bottom navigation bar theme is not set (File upload was not working)
+
+## [3.1.2] - 23/09/2024
+
+- Bump up dependencies
+- Solve build error with latest Flutter
+
 ## [3.1.1] - 29/01/2023
 
 - Fix deprecations
