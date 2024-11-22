@@ -77,6 +77,9 @@ class PapercupsCustomerMetadata {
   /// This is an external ID of the user.
   final String? externalId;
 
+  /// This is the phone number of the user.
+  final String? phone;
+
   /// Any extra data you want to pass can be passed as a key-value pair.
   final Map<String, dynamic>? otherMetadata;
 
@@ -85,6 +88,7 @@ class PapercupsCustomerMetadata {
     this.email,
     this.externalId,
     this.name,
+    this.phone,
     this.otherMetadata,
   });
 
@@ -94,6 +98,7 @@ class PapercupsCustomerMetadata {
       {
         'name': name,
         'email': email,
+        'phone': phone,
         'external_id': externalId,
         'metadata': metadata,
       },

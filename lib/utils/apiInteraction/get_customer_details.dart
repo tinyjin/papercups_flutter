@@ -22,6 +22,7 @@ Future<PapercupsCustomer> getCustomerDetails(
         "customer": {
           "account_id": p.accountId,
           "name": c?.name,
+          "phone": c?.phone,
           "email": c?.email,
           "external_id": c?.externalId,
           "first_seen": timeNow,
