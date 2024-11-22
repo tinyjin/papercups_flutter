@@ -1,3 +1,15 @@
+## [3.1.4] - 22/11/2024
+
+- Support customer property `phone`
+
+```dart
+PapercupsCustomerMetadata(
+  email: "team@blossomdiary.com",
+  externalId: "123",
+  phone: "+821057071462", // here to set the phone number
+)
+```
+
 ## [3.1.3] - 16/11/2024
 
 - Fix file picker
