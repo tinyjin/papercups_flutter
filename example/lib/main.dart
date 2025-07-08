@@ -1,7 +1,6 @@
 import 'package:flex_color_picker/flex_color_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:papercups_flutter/papercups_flutter.dart';
-import 'package:thememode_selector/thememode_selector.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
@@ -160,21 +159,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       spacing: 40,
                       runSpacing: 20,
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Change the theme:"),
-                            SizedBox(
-                              height: 22,
-                            ),
-                            ThemeModeSelector(
-                                height: 25,
-                                onChanged: (mode) {
-                                  ThemeModeManager.of(context)!.themeMode =
-                                      mode;
-                                }),
-                          ],
-                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
